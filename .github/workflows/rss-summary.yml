@@ -2,7 +2,7 @@ name: RSS AI Summary
 
 on:
   schedule:
-    - cron: '0 12 * * *' # 每天 12:00 (UTC) 运行
+    - cron: '0 8 * * *' # 每天 12:00 (UTC) 运行
   workflow_dispatch: # Manual trigger
 
 jobs:

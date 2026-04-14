@@ -1,0 +1,29 @@
+name: RSS AI Summary
+
+on:
+  schedule:
+    - cron: '0 12 * * *' # 每天 12:00 (UTC) 运行
+  workflow_dispatch: # Manual trigger
+
+jobs:
+  summarize:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Run summarizer
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          RSS_SOURCE: ${{ secrets.RSS_SOURCE }}
+          AI_MODEL: ${{ secrets.AI_MODEL }}
+          GITHUB_ACTIONS: "true"
+        run: |
+          python3 summarize.py

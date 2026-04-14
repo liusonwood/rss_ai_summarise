@@ -33,7 +33,7 @@
 *   **`AI_MODEL`**: 指定使用的 AI 模型（例如 `google/gemini-2.0-flash-001`）。如果不配置，默认使用该模型。
 
 ### 2. 订阅你的摘要
-一旦 GitHub Actions 运行成功（**每天 12:00 UTC 运行一次**，或在 Actions 页面手动触发），你可以在以下地址找到你的摘要源：
+一旦 GitHub Actions 运行成功（**每天运行一次**，或在 Actions 页面手动触发），你可以在以下地址找到你的摘要源：
 `https://raw.githubusercontent.com/{你的用户名}/{仓库名}/main/summary_feed.xml`
 
 ## 🛠 技术细节

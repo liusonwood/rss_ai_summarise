@@ -66,7 +66,7 @@ def fetch_rss_items(source):
                 if downloaded:
                     # trafilatura.extract 会智能识别正文，去掉广告和导航栏
                     # include_comments=False 保证不抓取评论干扰 AI
-                    body = trafilatura.extract(downloaded, include_comments=False, no_tables=True)
+                    body = trafilatura.extract(downloaded, include_comments=False, include_tables=False)
             except Exception as e:
                 print(f"  [!] 本地抓取失败: {e}")
 

@@ -6,6 +6,7 @@ import urllib.parse
 from datetime import datetime
 import subprocess
 import re
+import trafilatura
 
 # 现在可以直接使用官方源，不再需要 morss.it 了
 RSS_SOURCE = os.getenv("RSS_SOURCE", "https://9to5mac.com/feed/")
@@ -34,72 +35,57 @@ def update_storage(links):
         for link in links:
             f.write(f"{link}\n")
 
+
 def fetch_rss_items(source):
-    """Fetch RSS, parse it, and fetch full text via Jina Reader."""
+    """Fetch RSS and extract full text locally using trafilatura."""
     try:
-        print(f"Fetching RSS from: {source}")
-        if source.startswith("http"):
-            # 增加 User-Agent 防止被网站基础防护拦截
-            req = urllib.request.Request(source, headers={'User-Agent': 'Mozilla/5.0'})
-            with urllib.request.urlopen(req, timeout=15) as response:
-                content = response.read()
-        else:
-            with open(source, 'rb') as f:
-                content = f.read()
+        print(f"正在读取 RSS 源: {source}")
+        # 伪装成真正的浏览器去请求 RSS 文件
+        req = urllib.request.Request(source, headers={
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+        })
+        with urllib.request.urlopen(req, timeout=15) as response:
+            content = response.read()
                 
         root = ET.fromstring(content)
-        items =[]
+        items = []
         for item in root.findall('.//item'):
             title = item.find('title').text if item.find('title') is not None else "No Title"
             link = item.find('link').text if item.find('link') is not None else ""
             
-            # Fallback for empty link in 9to5mac feed
             if not link:
                 guid = item.find('guid')
-                if guid is not None:
-                    link = guid.text
+                if guid is not None: link = guid.text
             
-            # --- 新增的 Jina 全文抓取逻辑 (加强防屏蔽版) ---
-            print(f"正在抓取全文: {title}")
+            # --- 核心修改：本地直接抓取网页全文 ---
+            print(f"正在本地抓取全文: {title}")
+            body = ""
             try:
-                # 1. 确保链接没有多余的空格或换行
-                clean_link = link.strip()
-                jina_url = f"https://r.jina.ai/{clean_link}"
-                
-                # 2. 更加逼真的全套浏览器 Headers 伪装
-                headers = {
-                    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
-                    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
-                    'Accept-Language': 'en-US,en;q=0.5',
-                    'Connection': 'keep-alive'
-                }
-                
-                jina_req = urllib.request.Request(jina_url, headers=headers)
-                # 3. 将超时时间放宽到 30 秒，防止网页渲染太慢
-                with urllib.request.urlopen(jina_req, timeout=30) as response:
-                    body = response.read().decode('utf-8')
-                    
-            except urllib.error.HTTPError as e:
-                print(f"  [!] HTTP报错 ({e.code}): Jina 或目标网站拒绝了访问，将使用原生摘要兜底")
-                body = None
+                # trafilatura.fetch_url 会处理下载，自带防屏蔽处理
+                downloaded = trafilatura.fetch_url(link.strip())
+                if downloaded:
+                    # trafilatura.extract 会智能识别正文，去掉广告和导航栏
+                    # include_comments=False 保证不抓取评论干扰 AI
+                    body = trafilatura.extract(downloaded, include_comments=False, no_tables=True)
             except Exception as e:
-                print(f"  [!] 抓取异常: {e}，将使用原生摘要兜底")
-                body = None
-                
-            # 抓取失败时的兜底逻辑
-            if not body or len(body.strip()) < 50:
+                print(f"  [!] 本地抓取失败: {e}")
+
+            # 兜底逻辑：如果全文抓取失败或内容太短，取 RSS 自带的摘要
+            if not body or len(body) < 100:
+                print("  [!] 抓取内容过少，使用原生摘要兜底")
                 content_encoded = item.find('{http://purl.org/rss/1.0/modules/content/}encoded')
                 description = item.find('description').text if item.find('description') is not None else ""
-                fallback_text = content_encoded.text if content_encoded is not None else description
-                body = clean_html(fallback_text)
-            # -------------------------------
+                fallback = content_encoded.text if content_encoded is not None else description
+                body = clean_html(fallback)
+            # ------------------------------------
             
             items.append({"title": title, "link": link, "body": body})
         return items
     except Exception as e:
-        print(f"Error fetching RSS: {e}")
-        return[]
-
+        print(f"Error: {e}")
+        return []
+        
+        
 def get_ai_summary(items):
     """Call OpenRouter API to summarize the text."""
     if not OPENROUTER_API_KEY:

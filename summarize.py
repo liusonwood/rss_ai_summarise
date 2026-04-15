@@ -8,47 +8,46 @@ import subprocess
 import re
 import trafilatura
 
-# 现在可以直接使用官方源，不再需要 morss.it 了
+# 配置
 RSS_SOURCE = os.getenv("RSS_SOURCE", "https://9to5mac.com/feed/")
 PROCESSED_FILE = "processed.txt"
 OUTPUT_FEED = "summary_feed.xml"
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
-MAX_ITEMS = 10
+MAX_ITEMS = 20
 AI_MODEL = os.getenv("AI_MODEL", "google/gemini-2.0-flash-001")
+MAX_HISTORY_ITEMS = 500  # RSS 文件中保留的历史摘要条目数量
 
 def clean_html(raw_html):
-    """Strip HTML tags for token efficiency (用于抓取失败时的兜底过滤)."""
+    """清理 HTML 标签"""
     if not raw_html: return ""
     clean_re = re.compile('<.*?>')
     return re.sub(clean_re, '', raw_html).strip()
 
 def load_processed_links():
-    """Load processed links into a set."""
+    """加载已处理过的链接"""
     if not os.path.exists(PROCESSED_FILE):
         return set()
     with open(PROCESSED_FILE, 'r') as f:
         return set(line.strip() for line in f if line.strip())
 
 def update_storage(links):
-    """Append new links to processed.txt."""
+    """记录已处理的链接"""
     with open(PROCESSED_FILE, 'a') as f:
         for link in links:
-            f.write(f"{link}\n")
+            if link:
+                f.write(f"{link}\n")
 
-
-def fetch_rss_items(source):
-    """Fetch RSS and extract full text locally using trafilatura."""
+def fetch_rss_items(source, processed_links):
+    """优化版：先判断链接，只有新文章才抓取全文"""
     try:
         print(f"正在读取 RSS 源: {source}")
-        # 伪装成真正的浏览器去请求 RSS 文件
-        req = urllib.request.Request(source, headers={
-            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
-        })
+        req = urllib.request.Request(source, headers={'User-Agent': 'Mozilla/5.0'})
         with urllib.request.urlopen(req, timeout=15) as response:
             content = response.read()
                 
         root = ET.fromstring(content)
         items = []
+        
         for item in root.findall('.//item'):
             title = item.find('title').text if item.find('title') is not None else "No Title"
             link = item.find('link').text if item.find('link') is not None else ""
@@ -57,50 +56,51 @@ def fetch_rss_items(source):
                 guid = item.find('guid')
                 if guid is not None: link = guid.text
             
-            # --- 核心修改：本地直接抓取网页全文 ---
-            print(f"正在本地抓取全文: {title}")
+            link = link.strip()
+
+            # --- 关键优化：在这里先做判断 ---
+            if link in processed_links:
+                # 如果已经处理过，直接跳过抓取全文的步骤
+                continue 
+
+            print(f"发现新文章，正在抓取全文: {title}")
             body = ""
             try:
-                # trafilatura.fetch_url 会处理下载，自带防屏蔽处理
-                downloaded = trafilatura.fetch_url(link.strip())
+                downloaded = trafilatura.fetch_url(link)
                 if downloaded:
-                    # trafilatura.extract 会智能识别正文，去掉广告和导航栏
-                    # include_comments=False 保证不抓取评论干扰 AI
                     body = trafilatura.extract(downloaded, include_comments=False, include_tables=False)
             except Exception as e:
-                print(f"  [!] 本地抓取失败: {e}")
+                print(f"  [!] 全文提取失败: {e}")
 
-            # 兜底逻辑：如果全文抓取失败或内容太短，取 RSS 自带的摘要
             if not body or len(body) < 100:
-                print("  [!] 抓取内容过少，使用原生摘要兜底")
                 content_encoded = item.find('{http://purl.org/rss/1.0/modules/content/}encoded')
                 description = item.find('description').text if item.find('description') is not None else ""
                 fallback = content_encoded.text if content_encoded is not None else description
                 body = clean_html(fallback)
-            # ------------------------------------
             
             items.append({"title": title, "link": link, "body": body})
+            
+            # 为了防止单次任务耗时过长，如果新文章已经达到 MAX_ITEMS，可以提前停止抓取
+            if len(items) >= MAX_ITEMS:
+                break
+                
         return items
     except Exception as e:
         print(f"Error: {e}")
         return []
-        
-        
+
 def get_ai_summary(items):
-    """Call OpenRouter API to summarize the text."""
+    """调用 AI 生成摘要"""
     if not OPENROUTER_API_KEY:
         raise ValueError("OPENROUTER_API_KEY is not set!")
         
-    prompt = "Please provide a concise summary (in Chinese) for the following RSS items. Focus on the core message and use bullet points if possible:\n\n"
+    prompt = "请为以下 RSS 文章提供中文简报，重点突出核心信息，使用列表形式：\n\n"
     for idx, item in enumerate(items, 1):
-        # 【重点修改】因为获取到了全文，我们将截断长度从 500 放宽到 4000 字符
         prompt += f"{idx}. {item['title']}\n{item['body'][:4000]}...\n\n"
         
     data = {
         "model": AI_MODEL,
-        "messages":[
-            {"role": "user", "content": prompt}
-        ]
+        "messages": [{"role": "user", "content": prompt}]
     }
     
     req = urllib.request.Request(
@@ -120,74 +120,109 @@ def get_ai_summary(items):
             return res_data['choices'][0]['message']['content']
     except Exception as e:
         print(f"Error calling AI API: {e}")
-        return "Summary generation failed."
+        return "摘要生成失败。"
 
 def generate_rss_xml(summary_text):
-    """Generate a valid RSS XML feed with the AI summary."""
+    """生成或更新 RSS XML 文件 (增量添加)"""
     now = datetime.now()
     rfc822_date = now.strftime("%a, %d %b %Y %H:%M:%S +0000")
     unique_link = f"https://github.com/liusonwood#{now.strftime('%Y%m%d%H%M%S')}"
     
-    rss = ET.Element("rss", version="2.0")
-    channel = ET.SubElement(rss, "channel")
+    channel = None
+    rss_root = None
+
+    # 如果文件已存在，尝试读取旧内容
+    if os.path.exists(OUTPUT_FEED):
+        try:
+            tree = ET.parse(OUTPUT_FEED)
+            rss_root = tree.getroot()
+            channel = rss_root.find("channel")
+        except Exception as e:
+            print(f"读取旧 RSS 文件失败，将创建新文件: {e}")
+
+    # 如果没有旧文件或读取失败，创建基础结构
+    if channel is None:
+        rss_root = ET.Element("rss", version="2.0")
+        channel = ET.SubElement(rss_root, "channel")
+        ET.SubElement(channel, "title").text = "AI RSS 简报"
+        ET.SubElement(channel, "link").text = "https://github.com/liusonwood/rss_ai_summarise"
+        ET.SubElement(channel, "description").text = "由 AI 自动生成的文章全文摘要"
+
+    # 更新最后构建时间
+    last_build = channel.find("lastBuildDate")
+    if last_build is None:
+        last_build = ET.SubElement(channel, "lastBuildDate")
+    last_build.text = rfc822_date
+
+    # 创建新的 item 条目
+    new_item = ET.Element("item")
+    ET.SubElement(new_item, "title").text = f"AI 简报 - {now.strftime('%Y-%m-%d %H:%M')}"
+    ET.SubElement(new_item, "link").text = unique_link
+    ET.SubElement(new_item, "guid", isPermaLink="false").text = unique_link
+    ET.SubElement(new_item, "pubDate").text = rfc822_date
+    ET.SubElement(new_item, "description").text = summary_text
+
+    # 将新条目插入到所有 item 的最前面 (index 0 会插在 title/link 等标签前，所以寻找第一个 item 的位置)
+    # 简单处理：直接 insert 到第一个位置
+    channel.insert(0, new_item)
+
+    # 限制历史条目数量 (防止 XML 无限变大)
+    items = channel.findall("item")
+    if len(items) > MAX_HISTORY_ITEMS:
+        for old_item in items[MAX_HISTORY_ITEMS:]:
+            channel.remove(old_item)
+
+    # 格式化输出 (每行一个标签)
+    tree = ET.ElementTree(rss_root)
+    if hasattr(ET, 'indent'): # Python 3.9+
+        ET.indent(tree, space="  ", level=0)
     
-    ET.SubElement(channel, "title").text = "AI RSS Summaries"
-    ET.SubElement(channel, "link").text = "https://github.com/liusonwood/rss_ai_summarise"
-    ET.SubElement(channel, "description").text = "Automated AI summaries of your favorite feeds."
-    ET.SubElement(channel, "lastBuildDate").text = rfc822_date
-
-    item = ET.SubElement(channel, "item")
-    ET.SubElement(item, "title").text = f"Summary - {now.strftime('%Y-%m-%d %H:%M')}"
-    ET.SubElement(item, "link").text = unique_link
-    ET.SubElement(item, "guid").text = unique_link
-    ET.SubElement(item, "pubDate").text = rfc822_date
-    ET.SubElement(item, "description").text = summary_text
-
-    tree = ET.ElementTree(rss)
     tree.write(OUTPUT_FEED, encoding='utf-8', xml_declaration=True)
+    print(f"已更新 RSS 文件: {OUTPUT_FEED}")
 
 def git_commit_push():
-    """Commit and push the updated files back to GitHub."""
+    """推送更改到 GitHub"""
     if os.getenv("GITHUB_ACTIONS") != "true":
-        print("Not running in GitHub Actions. Skipping git push.")
+        print("非 GitHub Actions 环境，跳过 Git 推送。")
         return
 
-    commands = [["git", "config", "user.name", "github-actions[bot]"],["git", "config", "user.email", "github-actions[bot]@users.noreply.github.com"],["git", "add", PROCESSED_FILE, OUTPUT_FEED],["git", "commit", "-m", f"Auto-update: RSS AI Summary {datetime.now().strftime('%Y-%m-%d %H:%M')}"],
+    commands = [
+        ["git", "config", "user.name", "github-actions[bot]"],
+        ["git", "config", "user.email", "github-actions[bot]@users.noreply.github.com"],
+        ["git", "add", PROCESSED_FILE, OUTPUT_FEED],
+        ["git", "commit", "-m", f"Auto-update: {datetime.now().strftime('%Y-%m-%d %H:%M')}"],
         ["git", "push"]
     ]
 
     for cmd in commands:
         try:
-            subprocess.run(cmd, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+            subprocess.run(cmd, check=True, capture_output=True)
         except subprocess.CalledProcessError as e:
-            if "nothing to commit" in e.stdout.decode().lower():
-                print("No changes to commit.")
-            else:
-                print(f"Git command failed: {e.stderr.decode()}")
+            print(f"Git 命令跳过或失败: {e.stdout.decode()}")
+
+
 
 def main():
-    print("Starting RSS AI Summarizer...")
+    print("开始执行 AI RSS 摘要任务...")
+    # 1. 先加载已读列表
     processed_links = load_processed_links()
-    all_items = fetch_rss_items(RSS_SOURCE)
     
-    # 过滤掉已经处理过的文章
-    new_items = [item for item in all_items if item['link'] not in processed_links]
-    print(f"Found {len(new_items)} new items out of {len(all_items)} total.")
+    # 2. 传入已读列表，只抓取真正需要处理的文章
+    new_items = fetch_rss_items(RSS_SOURCE, processed_links)
     
     if not new_items:
-        print("No new items to process. Exiting.")
+        print("没有新内容，任务结束。")
         return
         
-    to_process = new_items[:MAX_ITEMS]
-    print(f"Processing {len(to_process)} items...")
+    # 3. 标记为已读
+    update_storage([item['link'] for item in new_items])
     
-    summary = get_ai_summary(to_process)
+    # 4. 生成摘要并更新 RSS
+    print(f"正在为 {len(new_items)} 篇文章生成摘要...")
+    summary = get_ai_summary(new_items)
     generate_rss_xml(summary)
     
-    # 将刚刚处理过的链接加入到已读文件
-    update_storage([item['link'] for item in to_process])
-    
-    print("Summary generated successfully!")
+    print("任务成功完成！")
     git_commit_push()
 
 if __name__ == "__main__":

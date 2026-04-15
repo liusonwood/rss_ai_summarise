@@ -2,6 +2,42 @@
 <rss version="2.0">
   <channel>
     <item>
+      <title>AI 简报 - 2026-04-15 11:43</title>
+      <link>https://github.com/liusonwood#20260415114312</link>
+      <guid isPermaLink="false">https://github.com/liusonwood#20260415114312</guid>
+      <pubDate>Wed, 15 Apr 2026 11:43:12 +0000</pubDate>
+      <description>以下是为您整理的 RSS 文章中文简报，按主题分类以突出核心信息：
+
+### 🛡️ 安全与隐私
+*   **Mac 恶意软件趋势：**  Trojan（特洛伊木马）已占 Mac 恶意软件检测的 50% 以上。其中 **Atomic Stealer** 表现突出，同时在木马和信息窃取软件类别中排名第一，模糊了两者的界限。
+*   **iCloud 备份遭攻击：** 一项调查显示，名为 BITTER APT 的黑客组织通过伪造 Apple 登录页面（钓鱼攻击）诱骗用户提供 Apple ID 凭据，从而直接入侵 iCloud 备份以获取 iPhone 全量数据。
+*   **互联网存档危机：** 许多主流新闻网站（如 USA Today）和 Reddit 正在屏蔽 Wayback Machine 的爬虫，威胁到互联网历史信息的数字化保存。
+
+### 📱 iOS / iPadOS / macOS 更新与功能
+*   **iOS 26.4 新功能：** 控制中心的 **Shazam 音乐识别现已支持离线工作**，识别后会在联网时自动推送结果。
+*   **iOS 26.5 Beta 2 动态：**
+    *   **Apple 地图将引入广告：** Beta 版出现弹窗，确认将根据位置和搜索词显示本地广告（无法选择退出）。
+    *   **新功能：** 地图新增“建议地点 (Suggested Places)”，并继续测试 RCS 端到端加密。
+*   **Apple Wallet 升级：** 美国最大航空公司 **美国航空 (American Airlines)** 已支持 iOS 26 的新版登机牌，集成地图、目的地指南及行李追踪（Find My）。
+*   **软件调整：** Apple 从 Mac App Store 移除了旧版 Pages, Keynote 和 Numbers，统一提供支持 Creator Studio 的新版本。
+
+### 💻 硬件爆料与产品
+*   **iPhone Fold (折叠屏)：** 预计 2026 年推出。但由于量产时间从 7 月推迟至 8 月，预计上市初期**供货将非常紧张**。
+*   **MacBook Neo 后继机型：** 预计搭载 **A19 Pro 芯片**，核心升级包括：内存从 8GB 提升至 **12GB**、GPU 性能大幅增强（AI 任务提升 3 倍）以及更高的能效比。
+*   **AirPods Pro 3 亮点：** 搭载第二代超宽带 (UWB) 芯片，使“精准查找”距离提升 1.5 倍（需 iPhone 15 或更新机型）。
+*   **Scosche Qi2 充电器：** 采用**强力吸盘**设计解决底座滑动问题，支持 15W 快速充电且附赠 20W 电源适配器。
+
+### 🍎 Apple 公司动态
+*   **高管变动：** 前 AI 负责人 **John Giannandrea** 本周正式离职，其 Siri 团队控制权此前已被剥离。
+*   **市场活动：** Apple 日本推出春季 App Store 宣传活动，与 13 位当地艺术家合作，推广包括 ChatGPT、Procreate Pocket 在内的应用。
+*   **Apple TV+：** 迎来强档期，包括《Margo’s Got Money Troubles》在内的三部顶尖剧集将同时播出。
+
+### 💰 购物优惠 (Amazon 等)
+*   **AirPods Pro 3：** 促销价 **$199**（原价 $249）。
+*   **Apple Watch Series 11：** 全线型号优惠 **$100**（起售价 $299）。
+*   **M4 MacBook Air：** 15 英寸型号清仓优惠最高达 **$300**。</description>
+    </item>
+    <item>
       <title>AI 简报 - 2026-04-15 11:27</title>
       <link>https://github.com/liusonwood#20260415112702</link>
       <guid isPermaLink="false">https://github.com/liusonwood#20260415112702</guid>
@@ -50,7 +86,7 @@
     <title>AI RSS Summaries</title>
     <link>https://github.com/liusonwood/rss_ai_summarise</link>
     <description>Automated AI summaries of your favorite feeds.</description>
-    <lastBuildDate>Wed, 15 Apr 2026 11:27:02 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 15 Apr 2026 11:43:12 +0000</lastBuildDate>
     <item>
       <title>Summary - 2026-04-15 11:15</title>
       <link>https://github.com/liusonwood#20260415111526</link>

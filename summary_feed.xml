@@ -1,19 +1,16 @@
 <?xml version='1.0' encoding='utf-8'?>
-<rss version="2.0"><channel><title>AI RSS Summaries</title><link>https://github.com/liusonwood/rss_ai_summarise</link><description>Automated AI summaries of your favorite feeds.</description><lastBuildDate>Wed, 15 Apr 2026 11:00:51 +0000</lastBuildDate><item><title>Summary - 2026-04-15 11:00</title><link>https://github.com/liusonwood#20260415110051</link><guid>https://github.com/liusonwood#20260415110051</guid><pubDate>Wed, 15 Apr 2026 11:00:51 +0000</pubDate><description>以下是 RSS 内容的简要总结：
+<rss version="2.0"><channel><title>AI RSS Summaries</title><link>https://github.com/liusonwood/rss_ai_summarise</link><description>Automated AI summaries of your favorite feeds.</description><lastBuildDate>Wed, 15 Apr 2026 11:05:12 +0000</lastBuildDate><item><title>Summary - 2026-04-15 11:05</title><link>https://github.com/liusonwood#20260415110512</link><guid>https://github.com/liusonwood#20260415110512</guid><pubDate>Wed, 15 Apr 2026 11:05:12 +0000</pubDate><description>以下是该 RSS 项目的简要汇总：
 
-**🍎 Apple 相关动态**
-*   **App Store 争议与监管：**
-    *   “Vibe coding” 应用 Anything 的开发者指责 Apple 审核指南过时，限制新一代开发者。
-    *   Apple 曾威胁将 Grok 移出 App Store，以应对其生成的色情深伪（deepfakes）内容。
-    *   Apple 下架了两个恶意应用：一个伪造的 Ledger 钱包（导致用户损失数百万）和一个非法采集数据的 Freecash。
-*   **产品与更新：**
-    *   **iOS 26：** 新增主屏幕图标设置，支持图标颜色随机身或手机壳颜色自动着色。
-    *   **Apple Business：** 发布统一的企业工具套件，并推出支持 Vision Pro 的全新 Business App。
-    *   **Apple Watch：** 将在地球日和国际舞蹈日推出两项新的活动挑战。
-*   **其他：**
-    *   **流媒体：** 由 Elle Fanning 主演的喜剧剧集《Margo’s Got Money Troubles》在 Apple TV 首播。
-    *   **法律诉讼：** Apple 指控 Jon Prosser 在 iOS 26 泄密案中未完全遵守传票要求。
-    *   **播客：** 9to5Mac Daily 每日新闻回顾（2026年4月14日）。
+**苹果产品与生态**
+* **AirPods Pro 3：** 用户反馈经过 7 个月的持续更新，其性能和体验比首发时更好。
+* **iPhone 18：** 今秋产品线传闻不断，但具体发布机型的数量仍是未知数。
+* **MacBook Pro：** 预计今年晚些时候将迎来一次规模巨大的重大更新。
+* **系统更新：** iOS、iPadOS 及 tvOS 26.5 的第二个公开 Beta 版已发布。
+* **服务与合作：** 
+    * Apple TV 和 Prime Video 现提供每月 2 美元的 Peacock Premium 订阅优惠。
+    * Pioneer 将为旧款车型带来一项全新的高级 CarPlay 功能。
+* **购物优惠：** M5 MacBook Air、Apple Watch Ultra 3/Series 11 及 M4 iPad Air 等多款产品目前有折扣。
 
-**🤖 AI 领域**
-*   **OpenAI：** 发布 GPT-5.4-Cyber 模型，专门用于防御性网络安全，不对公众开放。</description></item></channel></rss>
+**AI 与技术更新**
+* **Google Gemini：** Chrome 桌面版新增 “Skills” 功能，可快速运行自定义工作流/常用提示词。
+* **Anthropic Claude：** Claude Code 重新设计并加入“例行程序 (Routines)”功能，支持在 Mac 离线状态下运行。</description></item></channel></rss>

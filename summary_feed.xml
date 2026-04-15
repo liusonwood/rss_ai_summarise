@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<rss version="2.0">
+  <channel>
+    <item>
+      <title>AI 简报 - 2026-04-15 11:57</title>
+      <link>https://github.com/liusonwood#20260415115711</link>
+      <guid isPermaLink="false">https://github.com/liusonwood#20260415115711</guid>
+      <pubDate>Wed, 15 Apr 2026 11:57:11 +0000</pubDate>
+      <description>&lt;div style="font-family: sans-serif; line-height: 1.6;"&gt;
+    &lt;h2&gt;📰 科技与数码资讯简报&lt;/h2&gt;
+
+    &lt;h3&gt;🤖 AI 与 软件更新&lt;/h3&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;strong&gt;VSCO 摄影 AI 报告：&lt;/strong&gt; 调查显示 83% 的摄影师已采用 AI，其中 68% 的专业摄影师每周/每天使用。尽管对创意控制和伦理有担忧，但整体持务实态度，主要应用于后期制作。&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;iOS 26.4 更新：&lt;/strong&gt; 新增“减少亮度效果 (Reduce Bright Effects)”设置，允许用户禁用 Liquid Glass 设计中的闪烁元素。&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;iOS 26 壁纸自定义：&lt;/strong&gt; 推出 3D 空间壁纸功能，用户可通过设置将照片转换为随手机移动而产生 3D 效果的场景。&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;iOS 27 Siri 传闻：&lt;/strong&gt; 预计将推出独立的 Siri App，具备类似 ChatGPT 的对话界面、聊天历史记录、文件上传及深度系统集成功能。&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;Adobe Project Indigo：&lt;/strong&gt; 实验性相机 App 现已支持 iPhone 17e 及内存 $\ge$ 6GB 的 iPad，旨在提供类似单反的自然成像效果。&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;h3&gt;🍎 Apple 生态与硬件&lt;/h3&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;strong&gt;iPhone Fold (Ultra) 泄露：&lt;/strong&gt; 传闻折叠屏 iPhone 将命名为 "iPhone Ultra"，预计 9 月随 iPhone 18 系列发布，首批供应量约 1100 万台。&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;Mac 出货量增长：&lt;/strong&gt; IDC 报告显示 2026 年第一季度 Mac 出货量同比增长 9.1%，尽管面临零部件短缺影响。&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;Apple Wallet 扩展：&lt;/strong&gt; 雷克萨斯 (Lexus) 将于今年支持数字车钥匙，首款车型为 2026 款 ES。&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;配件推荐：&lt;/strong&gt; Satechi 推出 3-in-1 Qi2 折叠充电支架，支持 iPhone 25W 快充及 Apple Watch 快充。&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;促销信息：&lt;/strong&gt; 15 英寸 M5 MacBook Air 及 Series 11 Apple Watch 在 Amazon 出现大幅折扣（最高减 $150）。&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;h3&gt;📺 娱乐与流媒体&lt;/h3&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;strong&gt;XChat 即将发布：&lt;/strong&gt; X (原 Twitter) 将在 4 月 17 日推出独立加密消息应用 XChat，支持端到端加密、禁止截屏及视频通话。&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;Apple TV 动态：&lt;/strong&gt;
+            &lt;ul&gt;
+                &lt;li&gt;电影《Outcome》（基努·里维斯主演）现已上线，但口碑较低。&lt;/li&gt;
+                &lt;li&gt;《Shrinking》确认续订第四季；《The Hunt》和《The Last Thing He Told Me》预计完结。&lt;/li&gt;
+                &lt;li&gt;本月下旬将在洛杉矶举办 "Think Apple TV" 线下粉丝体验活动。&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;Amazon Prime Video Ultra：&lt;/strong&gt; 推出每月 $4.99 的无广告套餐，独享 4K/UHD 流媒体及 5 路并行播放。&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;YouTube Premium 涨价：&lt;/strong&gt; 美国区个人计划涨至 $15.99/月，家庭计划涨至 $26.99/月，将于 2026 年 6 月生效。&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;h3&gt;🌐 其他科技动态&lt;/h3&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;strong&gt;WhatsApp 更新：&lt;/strong&gt; 测试版显示“状态 (Status)”更新将整合至聊天主页顶部（需下拉触发），类似 Instagram Stories。&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;游戏移植：&lt;/strong&gt; 生存恐怖游戏《Cronos: The New Dawn》将于 4 月 28 日原生登陆 Apple Silicon Mac。&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;硬件评测：&lt;/strong&gt; Tribit StormBox Micro 3 发布，升级至 13W 功率、24 小时续航、IP68 防水及磁吸功能。&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</description>
+    </item>
+    <title>AI RSS 简报</title>
+    <link>https://github.com/liusonwood/rss_ai_summarise</link>
+    <description>由 AI 自动生成的文章全文摘要</description>
+    <lastBuildDate>Wed, 15 Apr 2026 11:57:11 +0000</lastBuildDate>
+  </channel>
+</rss>

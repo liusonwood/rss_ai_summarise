@@ -1,8 +1,19 @@
 <?xml version='1.0' encoding='utf-8'?>
-<rss version="2.0"><channel><title>RSS AI Daily Summary</title><link>https://github.com/liusonwood/rssaisummarise</link><description>AI-generated summaries of your RSS feeds.</description><lastBuildDate>Wed, 15 Apr 2026 09:11:07 +0000</lastBuildDate><item><title>Summary - 2026-04-15 09:11</title><link>https://github.com/liusonwood#20260415091107</link><guid isPermaLink="false">https://github.com/liusonwood#20260415091107</guid><pubDate>Wed, 15 Apr 2026 09:11:07 +0000</pubDate><description>以下是各項新聞的簡要總結：
+<rss version="2.0"><channel><title>AI RSS Summaries</title><link>https://github.com/liusonwood/rss_ai_summarise</link><description>Automated AI summaries of your favorite feeds.</description><lastBuildDate>Wed, 15 Apr 2026 11:00:51 +0000</lastBuildDate><item><title>Summary - 2026-04-15 11:00</title><link>https://github.com/liusonwood#20260415110051</link><guid>https://github.com/liusonwood#20260415110051</guid><pubDate>Wed, 15 Apr 2026 11:00:51 +0000</pubDate><description>以下是 RSS 内容的简要总结：
 
-*   **YouTube Music 更新界面**：Android 與 iOS 版推出「分屏播放」重新設計，更新了歌曲/影片切換圖標、放大封面圖並優化進度條設計。
-*   **Anything App 與 Apple 爭端**：Vibe Coding 平台 Anything 的開發者指責 Apple 的 App Store 審核指南過時，導致其應用程序多次被下架。
-*   **新劇首播**：由 Elle Fanning 等主演的喜劇劇集《Margo’s Got Money Troubles》已在 Apple TV 上線前三集。
-*   **Apple 警告 Grok**：Apple 曾威脅將 Grok 移出 App Store，原因在於該 AI 聊天機器人能生成具有性暗示的深度偽造（deepfake）圖片。
-*   **9to5Mac Daily 播客**：4 月 14 日更新，討論 MacBook Neo 的競爭對手及其他科技新聞。</description></item></channel></rss>
+**🍎 Apple 相关动态**
+*   **App Store 争议与监管：**
+    *   “Vibe coding” 应用 Anything 的开发者指责 Apple 审核指南过时，限制新一代开发者。
+    *   Apple 曾威胁将 Grok 移出 App Store，以应对其生成的色情深伪（deepfakes）内容。
+    *   Apple 下架了两个恶意应用：一个伪造的 Ledger 钱包（导致用户损失数百万）和一个非法采集数据的 Freecash。
+*   **产品与更新：**
+    *   **iOS 26：** 新增主屏幕图标设置，支持图标颜色随机身或手机壳颜色自动着色。
+    *   **Apple Business：** 发布统一的企业工具套件，并推出支持 Vision Pro 的全新 Business App。
+    *   **Apple Watch：** 将在地球日和国际舞蹈日推出两项新的活动挑战。
+*   **其他：**
+    *   **流媒体：** 由 Elle Fanning 主演的喜剧剧集《Margo’s Got Money Troubles》在 Apple TV 首播。
+    *   **法律诉讼：** Apple 指控 Jon Prosser 在 iOS 26 泄密案中未完全遵守传票要求。
+    *   **播客：** 9to5Mac Daily 每日新闻回顾（2026年4月14日）。
+
+**🤖 AI 领域**
+*   **OpenAI：** 发布 GPT-5.4-Cyber 模型，专门用于防御性网络安全，不对公众开放。</description></item></channel></rss>

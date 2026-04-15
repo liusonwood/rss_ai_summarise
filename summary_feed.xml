@@ -1,20 +1,17 @@
 <?xml version='1.0' encoding='utf-8'?>
-<rss version="2.0"><channel><title>AI RSS Summaries</title><link>https://github.com/liusonwood/rss_ai_summarise</link><description>Automated AI summaries of your favorite feeds.</description><lastBuildDate>Wed, 15 Apr 2026 11:12:26 +0000</lastBuildDate><item><title>Summary - 2026-04-15 11:12</title><link>https://github.com/liusonwood#20260415111226</link><guid>https://github.com/liusonwood#20260415111226</guid><pubDate>Wed, 15 Apr 2026 11:12:26 +0000</pubDate><description>以下是上述 RSS 项目的内容摘要：
+<rss version="2.0"><channel><title>AI RSS Summaries</title><link>https://github.com/liusonwood/rss_ai_summarise</link><description>Automated AI summaries of your favorite feeds.</description><lastBuildDate>Wed, 15 Apr 2026 11:15:26 +0000</lastBuildDate><item><title>Summary - 2026-04-15 11:15</title><link>https://github.com/liusonwood#20260415111526</link><guid>https://github.com/liusonwood#20260415111526</guid><pubDate>Wed, 15 Apr 2026 11:15:26 +0000</pubDate><description>以下是为您整理的 RSS 内容精简摘要：
 
-**市场与业务动态**
-* **智能手机市场：** 全球市场首季下滑超 4%，虽前景严峻，但苹果的策略目前成效显著。
-* **Mac 增长策略：** 分析师认为苹果可能正通过牺牲部分利润率来换取市场份额，未来十年 Mac 用户数有望翻倍。
-* **竞争优势：** 微软 Surface 大幅涨价（部分机型涨幅达 50%），进一步提升了 MacBook Neo 的竞争力。
+**📱 市场与硬件**
+*   **智能手机市场下滑：** 第一季度全球出货量下降 4.1%，主因是存储芯片短缺导致成本上升及售价提高。Apple 和三星凭借高端产品的高利润率维持价格稳定，从而在市场低迷中实现增长。
+*   **iOS 26 新功能：** 新增主屏幕图标着色设置，支持将应用图标颜色自动匹配 iPhone 机身颜色或手机壳颜色（主要支持官方 MagSafe 壳）。
 
-**产品与技术更新**
-* **Vision Pro：** 随着新款 Blackmagic 摄像机于秋季上市，实时沉浸式视频内容有望增加。
-* **Apple Wallet：** 持续升级，已支持车钥匙、数字 ID 及订单追踪等多种功能。
-* **卫星服务：** 亚马逊收购 Globalstar，苹果将通过 Amazon Leo 为 iPhone 和 Apple Watch 提供卫星连接服务。
-* **Find My 生态：** 市场现已有多种形态的 Find My 兼容配件可供选择。
+**🍎 Apple 生态与 App Store**
+*   **审核争议：** AI 编程应用 "Anything" 因违反 App Store 关于动态运行代码的规定被两次下架，开发者指责 Apple 审核准则过时，阻碍新一代创作。
+*   **内容监管：** Apple 曾私下威胁将 Grok 下架，因其生成违规色情深度伪造图像；尽管 Grok 随后进行了调整，但近期报道称其仍能生成部分违规内容。
+*   **安全清理：** Apple 下架了两个恶意应用：一个伪装成 Ledger Live 的加密货币盗款应用，以及一个通过误导性营销收集用户敏感数据的 Freecash 应用。
+*   **法律诉讼：** 在 iOS 26 泄密案中，Apple 指控泄密者 Jon Prosser 仅部分配合传票要求，计划向法院申请强制令。
+*   **Apple TV+：** 由 Elle Fanning 主演的喜剧正剧 $\textit{Margo’s Got Money Troubles}$ 正式上线。
 
-**内容与媒体**
-* **Apple TV+：** 演员 Brian Tyree Henry 将加盟 Apple Original Films 的新电影。
-
-**播客与安全 (Mosyle 赞助)**
-* **Apple @ Work：** 介绍 PocketMDM 应用，旨在将 Apple 商业管理功能便捷化。
-* **Security Bite：** 警告 Mac 恶意软件趋势，Atomic Stealer 使木马程序在 Mac 检出率中占比升至 50% 以上。</description></item></channel></rss>
+**🤖 AI 与软件更新**
+*   **OpenAI 发布 GPT-5.4-Cyber：** 这是一个专门用于**防御性网络安全**的变体模型，具备二进制逆向工程能力，仅限经过审核的安全专家和企业使用。
+*   **YouTube Music 更新：** Android 和 iOS 端推出分屏播放界面，优化了封面显示，并将“接下来播放”队列直接置于底部，支持通过上滑切换视图。</description></item></channel></rss>

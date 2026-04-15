@@ -1,5 +1,62 @@
 <?xml version='1.0' encoding='utf-8'?>
-<rss version="2.0"><channel><title>AI RSS Summaries</title><link>https://github.com/liusonwood/rss_ai_summarise</link><description>Automated AI summaries of your favorite feeds.</description><lastBuildDate>Wed, 15 Apr 2026 11:15:26 +0000</lastBuildDate><item><title>Summary - 2026-04-15 11:15</title><link>https://github.com/liusonwood#20260415111526</link><guid>https://github.com/liusonwood#20260415111526</guid><pubDate>Wed, 15 Apr 2026 11:15:26 +0000</pubDate><description>以下是为您整理的 RSS 内容精简摘要：
+<rss version="2.0">
+  <channel>
+    <item>
+      <title>AI 简报 - 2026-04-15 11:27</title>
+      <link>https://github.com/liusonwood#20260415112702</link>
+      <guid isPermaLink="false">https://github.com/liusonwood#20260415112702</guid>
+      <pubDate>Wed, 15 Apr 2026 11:27:02 +0000</pubDate>
+      <description>以下为您提供这 20 篇 RSS 文章的中文简报，按主题分类并突出核心信息：
+
+### 🍎 Apple 产品更新与传闻
+*   **MacBook Pro 大改款（预期年底发布）：**
+    *   **屏幕：** 首次采用 OLED 屏幕（取代 mini-LED），支持触控屏幕。
+    *   **设计：** 引入“灵动岛”设计（取代刘海屏），机身将变得更薄。
+    *   **硬件：** 搭载 2nm 工艺的 M6 芯片，性能与能效大幅提升。
+    *   **命名：** 可能会推出高端的“MacBook Ultra”系列。
+*   **iPhone 18 系列预测：**
+    *   **产品线：** 确定推出 Pro、Pro Max 及首款折叠屏 iPhone Ultra/Fold。
+    *   **不确定性：** iPhone Air 2 是否在今年秋季发布仍有争议（可能推迟至 2027 年）。
+    *   **Pro 系列：** 预计有深红色新配色、更小的灵动岛及电池寿命提升。
+*   **AirPods Pro 3 长期评测：**
+    *   **亮点：** 音质极佳（接近 AirPods Max 2），降噪和透明模式顶级。
+    *   **改进：** 采用硅胶-泡沫混合耳塞，佩戴舒适度与密封性提升。
+    *   **电池：** 单次续航增至 8 小时，但充电盒总续航降至 24 小时。
+*   **AirTag 2 更新：**
+    *   **升级点：** 第二代超宽带（UWB）芯片使精确查找距离延长 1.5 倍，蓝牙范围扩大，扬声器音量提升 50%。
+
+### ⚙️ 软件与系统更新
+*   **Apple Business 2.0：** 统一企业工具套件，现为免费提供，支持 Apple Vision Pro，并新增组织目录功能。
+*   **iOS/iPadOS/tvOS 26.5 公测版 Beta 2：** 重点更新为 Apple Maps 的广告详情弹窗，持续测试 RCS 端到端加密及部分地区的 Live Activities 扩展。
+*   **Apple Wallet 增强：** 丰田（Toyota）等品牌支持数字车钥匙；Aqara 推出支持 UWB 的智能锁；美国航空（American Airlines）支持升级版登机牌。
+
+### 🚀 AI 与第三方技术
+*   **Google Chrome Gemini "Skills"：** 通过输入 `/` 快速运行自定义工作流（如计算营养成分、对比商品参数、扫描长文档）。
+*   **Anthropic Claude Code：** 为 Mac 用户推出“例行程序（Routines）”功能，支持离线调度自动化任务；界面重新设计，支持并行会话和集成终端。
+*   **Amazon 收购 Globalstar：** Amazon 以 115.7 亿美元收购卫星公司 Globalstar。Apple 将通过 Amazon Leo 提供 iPhone 和 Apple Watch 的卫星服务（如紧急 SOS）。
+
+### 📺 娱乐与生活服务
+*   **Apple TV + Peacock 捆绑包：** 用户可通过 Apple 或 Prime Video 订阅，价格低至 $14.99/月（含广告）或 $19.99/月（无广告）。
+*   **Apple Watch 活动挑战：** 4 月 22 日（地球日）记录 30 分钟锻炼，4 月 29 日（国际舞蹈日）记录 20 分钟舞蹈锻炼，可赢取数字奖章。
+*   **Apple 原创电影：** 演员 Brian Tyree Henry 加入新片《Running》。
+*   **Vision Pro 沉浸式视频：** Blackmagic 推出 URSA Cine Immersive 100G 摄像机，旨在加速体育赛事等现场沉浸式视频内容的生产。
+
+### 💰 市场分析与消费指南
+*   **Mac 市场策略：** 分析师认为 Apple 正在牺牲部分硬件利润率（通过承受内存成本上涨而不涨价），以抢占 Windows/ChromeOS 份额，通过后续的服务订阅获利。
+*   **竞争动态：** 微软 Surface 全线大幅涨价（部分型号上涨 50%），使低价的 MacBook Neo 极具竞争力。
+*   **Pioneer 汽车配件：** 推出 Sphera 接收机，首次为旧款汽车通过 CarPlay 提供 Dolby Atmos（杜比全景声）空间音频支持。
+*   **近期折扣：** AirPods Pro 3 ($199)、M4/M5 MacBook Air、Apple Watch Ultra 3 及 Series 11 均有不同程度的降价。</description>
+    </item>
+    <title>AI RSS Summaries</title>
+    <link>https://github.com/liusonwood/rss_ai_summarise</link>
+    <description>Automated AI summaries of your favorite feeds.</description>
+    <lastBuildDate>Wed, 15 Apr 2026 11:27:02 +0000</lastBuildDate>
+    <item>
+      <title>Summary - 2026-04-15 11:15</title>
+      <link>https://github.com/liusonwood#20260415111526</link>
+      <guid>https://github.com/liusonwood#20260415111526</guid>
+      <pubDate>Wed, 15 Apr 2026 11:15:26 +0000</pubDate>
+      <description>以下是为您整理的 RSS 内容精简摘要：
 
 **📱 市场与硬件**
 *   **智能手机市场下滑：** 第一季度全球出货量下降 4.1%，主因是存储芯片短缺导致成本上升及售价提高。Apple 和三星凭借高端产品的高利润率维持价格稳定，从而在市场低迷中实现增长。
@@ -14,4 +71,7 @@
 
 **🤖 AI 与软件更新**
 *   **OpenAI 发布 GPT-5.4-Cyber：** 这是一个专门用于**防御性网络安全**的变体模型，具备二进制逆向工程能力，仅限经过审核的安全专家和企业使用。
-*   **YouTube Music 更新：** Android 和 iOS 端推出分屏播放界面，优化了封面显示，并将“接下来播放”队列直接置于底部，支持通过上滑切换视图。</description></item></channel></rss>
+*   **YouTube Music 更新：** Android 和 iOS 端推出分屏播放界面，优化了封面显示，并将“接下来播放”队列直接置于底部，支持通过上滑切换视图。</description>
+    </item>
+  </channel>
+</rss>

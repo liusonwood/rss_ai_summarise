@@ -1,16 +1,20 @@
 <?xml version='1.0' encoding='utf-8'?>
-<rss version="2.0"><channel><title>AI RSS Summaries</title><link>https://github.com/liusonwood/rss_ai_summarise</link><description>Automated AI summaries of your favorite feeds.</description><lastBuildDate>Wed, 15 Apr 2026 11:05:12 +0000</lastBuildDate><item><title>Summary - 2026-04-15 11:05</title><link>https://github.com/liusonwood#20260415110512</link><guid>https://github.com/liusonwood#20260415110512</guid><pubDate>Wed, 15 Apr 2026 11:05:12 +0000</pubDate><description>以下是该 RSS 项目的简要汇总：
+<rss version="2.0"><channel><title>AI RSS Summaries</title><link>https://github.com/liusonwood/rss_ai_summarise</link><description>Automated AI summaries of your favorite feeds.</description><lastBuildDate>Wed, 15 Apr 2026 11:12:26 +0000</lastBuildDate><item><title>Summary - 2026-04-15 11:12</title><link>https://github.com/liusonwood#20260415111226</link><guid>https://github.com/liusonwood#20260415111226</guid><pubDate>Wed, 15 Apr 2026 11:12:26 +0000</pubDate><description>以下是上述 RSS 项目的内容摘要：
 
-**苹果产品与生态**
-* **AirPods Pro 3：** 用户反馈经过 7 个月的持续更新，其性能和体验比首发时更好。
-* **iPhone 18：** 今秋产品线传闻不断，但具体发布机型的数量仍是未知数。
-* **MacBook Pro：** 预计今年晚些时候将迎来一次规模巨大的重大更新。
-* **系统更新：** iOS、iPadOS 及 tvOS 26.5 的第二个公开 Beta 版已发布。
-* **服务与合作：** 
-    * Apple TV 和 Prime Video 现提供每月 2 美元的 Peacock Premium 订阅优惠。
-    * Pioneer 将为旧款车型带来一项全新的高级 CarPlay 功能。
-* **购物优惠：** M5 MacBook Air、Apple Watch Ultra 3/Series 11 及 M4 iPad Air 等多款产品目前有折扣。
+**市场与业务动态**
+* **智能手机市场：** 全球市场首季下滑超 4%，虽前景严峻，但苹果的策略目前成效显著。
+* **Mac 增长策略：** 分析师认为苹果可能正通过牺牲部分利润率来换取市场份额，未来十年 Mac 用户数有望翻倍。
+* **竞争优势：** 微软 Surface 大幅涨价（部分机型涨幅达 50%），进一步提升了 MacBook Neo 的竞争力。
 
-**AI 与技术更新**
-* **Google Gemini：** Chrome 桌面版新增 “Skills” 功能，可快速运行自定义工作流/常用提示词。
-* **Anthropic Claude：** Claude Code 重新设计并加入“例行程序 (Routines)”功能，支持在 Mac 离线状态下运行。</description></item></channel></rss>
+**产品与技术更新**
+* **Vision Pro：** 随着新款 Blackmagic 摄像机于秋季上市，实时沉浸式视频内容有望增加。
+* **Apple Wallet：** 持续升级，已支持车钥匙、数字 ID 及订单追踪等多种功能。
+* **卫星服务：** 亚马逊收购 Globalstar，苹果将通过 Amazon Leo 为 iPhone 和 Apple Watch 提供卫星连接服务。
+* **Find My 生态：** 市场现已有多种形态的 Find My 兼容配件可供选择。
+
+**内容与媒体**
+* **Apple TV+：** 演员 Brian Tyree Henry 将加盟 Apple Original Films 的新电影。
+
+**播客与安全 (Mosyle 赞助)**
+* **Apple @ Work：** 介绍 PocketMDM 应用，旨在将 Apple 商业管理功能便捷化。
+* **Security Bite：** 警告 Mac 恶意软件趋势，Atomic Stealer 使木马程序在 Mac 检出率中占比升至 50% 以上。</description></item></channel></rss>

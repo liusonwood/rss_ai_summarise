@@ -59,20 +59,35 @@ def fetch_rss_items(source):
                 if guid is not None:
                     link = guid.text
             
-            # --- 新增的 Jina 全文抓取逻辑 ---
+            # --- 新增的 Jina 全文抓取逻辑 (加强防屏蔽版) ---
             print(f"正在抓取全文: {title}")
             try:
-                jina_url = f"https://r.jina.ai/{link}"
-                jina_req = urllib.request.Request(
-                    jina_url, 
-                    headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)'}
-                )
-                with urllib.request.urlopen(jina_req, timeout=15) as response:
-                    # 获取到的直接是排版干净的 Markdown 文本
+                # 1. 确保链接没有多余的空格或换行
+                clean_link = link.strip()
+                jina_url = f"https://r.jina.ai/{clean_link}"
+                
+                # 2. 更加逼真的全套浏览器 Headers 伪装
+                headers = {
+                    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
+                    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+                    'Accept-Language': 'en-US,en;q=0.5',
+                    'Connection': 'keep-alive'
+                }
+                
+                jina_req = urllib.request.Request(jina_url, headers=headers)
+                # 3. 将超时时间放宽到 30 秒，防止网页渲染太慢
+                with urllib.request.urlopen(jina_req, timeout=30) as response:
                     body = response.read().decode('utf-8')
+                    
+            except urllib.error.HTTPError as e:
+                print(f"  [!] HTTP报错 ({e.code}): Jina 或目标网站拒绝了访问，将使用原生摘要兜底")
+                body = None
             except Exception as e:
-                print(f"  [!] 抓取全文失败 ({link}): {e}，将使用原生摘要兜底")
-                # 抓取失败时的兜底逻辑（使用 RSS 原本的描述）
+                print(f"  [!] 抓取异常: {e}，将使用原生摘要兜底")
+                body = None
+                
+            # 抓取失败时的兜底逻辑
+            if not body or len(body.strip()) < 50:
                 content_encoded = item.find('{http://purl.org/rss/1.0/modules/content/}encoded')
                 description = item.find('description').text if item.find('description') is not None else ""
                 fallback_text = content_encoded.text if content_encoded is not None else description

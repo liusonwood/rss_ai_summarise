@@ -1,6 +1,13 @@
-<?xml version='1.0' encoding='utf-8'?>
-<rss version="2.0">
+<?xml version="1.0" ?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
+    <item>
+      <title>AI 简报 - 2026-04-16 10:40 (UTC)</title>
+      <link>https://github.com/liusonwood/rss_ai_summarise#20260416104006</link>
+      <description>以下是为您整理的 RSS 文章中文简报，重点突出核心信息：&lt;br/&gt;&lt;br/&gt;### 📱 iOS 与 iPhone 动态&lt;br/&gt;*   &lt;strong&gt;系统版本限制&lt;/strong&gt;：Apple 已停止签署 iOS 26.4，用户目前无法从 iOS 26.4.1 降级回 26.4。&lt;br/&gt;*   &lt;strong&gt;iOS 26.4 新功能&lt;/strong&gt;：新增“环境音乐（Ambient Music）”小组件，支持一键播放四种不同心情的播放列表（仅限 Apple Music 用户）。&lt;br/&gt;*   &lt;strong&gt;App Store 变动&lt;/strong&gt;：iOS 26.4 调整了更新页面的位置（需多点一次），但可通过&lt;strong&gt;长按 App Store 图标 $\rightarrow$ 点击“更新”&lt;/strong&gt;快速进入。&lt;br/&gt;*   &lt;strong&gt;安全漏洞警示&lt;/strong&gt;：Veritasium 揭露一个 niche 漏洞，在特定受控环境下，若用户将 Visa 卡设为“快捷交通（Express Transit）”，锁屏状态下的 iPhone 可能被诱导进行非法支付。&lt;br/&gt;*   &lt;strong&gt;法律纠纷&lt;/strong&gt;：Apple 指控泄密者 Jon Prosser 仅部分遵守了法院传票，未完全提供所需机密信息。&lt;br/&gt;&lt;br/&gt;### 💻 Mac 与 硬件产品&lt;br/&gt;*   &lt;strong&gt;MacBook Neo 影响&lt;/strong&gt;：该款 599 美元的低价 Mac 市场反响热烈。微软为此推出“大学优惠”计划（送一年 365 和 Game Pass），试图挽回学生用户。&lt;br/&gt;*   &lt;strong&gt;OLED 趋势&lt;/strong&gt;：报告预测 2026 年 MacBook Pro 将转向 OLED 屏幕，这将驱动笔记本 OLED 市场的增长。&lt;br/&gt;*   &lt;strong&gt;产品线泄露 (2026年预期)&lt;/strong&gt;：&lt;br/&gt;    *   &lt;strong&gt;iPhone 18 系列&lt;/strong&gt;：包括首款折叠屏 &lt;strong&gt;iPhone Ultra&lt;/strong&gt;（预计起售价 1,999 美元，采用 A20 Pro 芯片、Touch ID 侧边指纹、无折痕大屏）。&lt;br/&gt;    *   &lt;strong&gt;Mac 系列&lt;/strong&gt;：M5 芯片的 Mac mini, Mac Studio, iMac；以及采用 OLED 屏且工业设计大改的 &lt;strong&gt;M6 MacBook Pro&lt;/strong&gt;。&lt;br/&gt;    *   &lt;strong&gt;其他&lt;/strong&gt;：OLED 版 iPad mini、新款 Apple Watch Ultra 4、带有 AI 功能的 AirPods Pro 以及潜在的 Apple Glasses 揭晓。&lt;br/&gt;&lt;br/&gt;### 🤖 AI 与 软件服务&lt;br/&gt;*   &lt;strong&gt;Siri 升级计划&lt;/strong&gt;：Apple 将派遣近 200 名 Siri 工程师参加多周的“AI 编程训练营”，以学习利用 AI 辅助开发工具提高效率。&lt;br/&gt;*   &lt;strong&gt;Google Gemini Mac App&lt;/strong&gt;：Google 推出原生 Swift 开发的 Mac 客户端，支持快捷键 `Option + Space` 快速唤起，提供摘要、代码辅助等功能。&lt;br/&gt;*   &lt;strong&gt;Apple $\times$ Google 合作&lt;/strong&gt;：确认下一代 Apple 基础模型将基于 Gemini，旨在为未来的 Siri 提供更强的个性化能力。&lt;br/&gt;&lt;br/&gt;### 📺 娱乐与 应用市场&lt;br/&gt;*   &lt;strong&gt;Apple TV+ 新剧&lt;/strong&gt;：三部犯罪惊悚剧即将上线，分别是 $\langle Widow’s Bay \rangle$ (4/29)、$\langle Unconditional \rangle$ (5/8) 和 $\langle Maximum Pleasure Guaranteed \rangle$ (5/20)。&lt;br/&gt;*   &lt;strong&gt;Netflix 争议&lt;/strong&gt;：Netflix 在 Apple TV App 中弃用原生播放器改用自定义播放器，导致快进/快退操作变繁琐，且丢失了 iOS 实时活动等系统级集成功能。&lt;br/&gt;*   &lt;strong&gt;App Store 审核危机&lt;/strong&gt;：TTP 报告称，App Store 的搜索建议和广告将用户引导至能够生成深度伪造裸照的“脱衣（Nudify）”类 App。&lt;br/&gt;&lt;br/&gt;### 💰 优惠信息&lt;br/&gt;*   &lt;strong&gt;Google One 优惠&lt;/strong&gt;：2TB 及以上套餐订阅者可享受 YouTube Premium 一年 5 折优惠（限特定国家/地区）。&lt;br/&gt;*   &lt;strong&gt;硬件折扣&lt;/strong&gt;：Amazon 针对 M5 Pro MacBook Pro 和 M5 MacBook Air 提供了 150 美元的折扣。</description>
+      <guid isPermaLink="false">ai-summary-20260416104006</guid>
+      <pubDate>Thu, 16 Apr 2026 10:40:06 GMT</pubDate>
+    </item>
     <item>
       <title>AI 简报 - 2026-04-15 11:57</title>
       <link>https://github.com/liusonwood#20260415115711</link>
@@ -8,7 +15,6 @@
       <pubDate>Wed, 15 Apr 2026 11:57:11 +0000</pubDate>
       <description>&lt;div style="font-family: sans-serif; line-height: 1.6;"&gt;
     &lt;h2&gt;📰 科技与数码资讯简报&lt;/h2&gt;
-
     &lt;h3&gt;🤖 AI 与 软件更新&lt;/h3&gt;
     &lt;ul&gt;
         &lt;li&gt;&lt;strong&gt;VSCO 摄影 AI 报告：&lt;/strong&gt; 调查显示 83% 的摄影师已采用 AI，其中 68% 的专业摄影师每周/每天使用。尽管对创意控制和伦理有担忧，但整体持务实态度，主要应用于后期制作。&lt;/li&gt;
@@ -17,7 +23,6 @@
         &lt;li&gt;&lt;strong&gt;iOS 27 Siri 传闻：&lt;/strong&gt; 预计将推出独立的 Siri App，具备类似 ChatGPT 的对话界面、聊天历史记录、文件上传及深度系统集成功能。&lt;/li&gt;
         &lt;li&gt;&lt;strong&gt;Adobe Project Indigo：&lt;/strong&gt; 实验性相机 App 现已支持 iPhone 17e 及内存 $\ge$ 6GB 的 iPad，旨在提供类似单反的自然成像效果。&lt;/li&gt;
     &lt;/ul&gt;
-
     &lt;h3&gt;🍎 Apple 生态与硬件&lt;/h3&gt;
     &lt;ul&gt;
         &lt;li&gt;&lt;strong&gt;iPhone Fold (Ultra) 泄露：&lt;/strong&gt; 传闻折叠屏 iPhone 将命名为 "iPhone Ultra"，预计 9 月随 iPhone 18 系列发布，首批供应量约 1100 万台。&lt;/li&gt;
@@ -26,7 +31,6 @@
         &lt;li&gt;&lt;strong&gt;配件推荐：&lt;/strong&gt; Satechi 推出 3-in-1 Qi2 折叠充电支架，支持 iPhone 25W 快充及 Apple Watch 快充。&lt;/li&gt;
         &lt;li&gt;&lt;strong&gt;促销信息：&lt;/strong&gt; 15 英寸 M5 MacBook Air 及 Series 11 Apple Watch 在 Amazon 出现大幅折扣（最高减 $150）。&lt;/li&gt;
     &lt;/ul&gt;
-
     &lt;h3&gt;📺 娱乐与流媒体&lt;/h3&gt;
     &lt;ul&gt;
         &lt;li&gt;&lt;strong&gt;XChat 即将发布：&lt;/strong&gt; X (原 Twitter) 将在 4 月 17 日推出独立加密消息应用 XChat，支持端到端加密、禁止截屏及视频通话。&lt;/li&gt;
@@ -40,7 +44,6 @@
         &lt;li&gt;&lt;strong&gt;Amazon Prime Video Ultra：&lt;/strong&gt; 推出每月 $4.99 的无广告套餐，独享 4K/UHD 流媒体及 5 路并行播放。&lt;/li&gt;
         &lt;li&gt;&lt;strong&gt;YouTube Premium 涨价：&lt;/strong&gt; 美国区个人计划涨至 $15.99/月，家庭计划涨至 $26.99/月，将于 2026 年 6 月生效。&lt;/li&gt;
     &lt;/ul&gt;
-
     &lt;h3&gt;🌐 其他科技动态&lt;/h3&gt;
     &lt;ul&gt;
         &lt;li&gt;&lt;strong&gt;WhatsApp 更新：&lt;/strong&gt; 测试版显示“状态 (Status)”更新将整合至聊天主页顶部（需下拉触发），类似 Instagram Stories。&lt;/li&gt;
@@ -52,6 +55,7 @@
     <title>AI RSS 简报</title>
     <link>https://github.com/liusonwood/rss_ai_summarise</link>
     <description>由 AI 自动生成的文章全文摘要</description>
-    <lastBuildDate>Wed, 15 Apr 2026 11:57:11 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Apr 2026 10:40:06 GMT</lastBuildDate>
+    <atom:link rel="self" type="application/rss+xml" href="https://liusonwood.github.io/rss_ai_summarise/summary_feed.xml"/>
   </channel>
 </rss>

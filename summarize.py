@@ -96,7 +96,10 @@ def get_ai_summary(items):
     if not OPENROUTER_API_KEY:
         raise ValueError("OPENROUTER_API_KEY is not set!")
         
-    prompt = "请为以下 RSS 文章提供中文简报，重点突出核心信息，使用列表形式：\n\n"
+        
+    prompt = "请为以下 RSS 文章提供中文简报，重点突出核心信息；以纯文本形式回复，不要带markdown标签；正文前不要带说明性问候；使用列表形式：\n\n"
+    
+    
     for idx, item in enumerate(items, 1):
         prompt += f"{idx}. {item['title']}\n{item['body'][:4000]}...\n\n"
         

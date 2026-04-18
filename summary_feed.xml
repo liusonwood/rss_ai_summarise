@@ -5,7 +5,14 @@
     <link>https://github.com/liusonwood/rss_ai_summarise</link>
     <description>由 AI 自动生成的文章全文摘要</description>
     <atom:link rel="self" type="application/rss+xml" href="https://liusonwood.github.io/rss_ai_summarise/summary_feed.xml"/>
-    <lastBuildDate>Sat, 18 Apr 2026 08:39:49 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 18 Apr 2026 10:47:59 GMT</lastBuildDate>
+    <item>
+      <title>AI 简报 - 2026-04-18 10:47 (UTC)</title>
+      <link>https://github.com/liusonwood/rss_ai_summarise#20260418104759</link>
+      <description>• iPhone 品牌忠诚度创新高：调查显示 96.4% 的 iPhone 用户计划继续购买该品牌，而 Android 用户转向 iPhone 的概率是反向转换的 3.7 倍。&lt;br/&gt;- iOS 26.2 增强安全警报：引入增强型安全警报功能，在自然灾害等紧急情况下提供含地图和政府指导建议的富文本通知。&lt;br/&gt;- Spotify 平板端大改版：针对 iPad 和 Android 平板推出适配大屏的界面，包含自适应方向、可折叠侧边栏、增强视频体验和并行浏览四项功能。&lt;br/&gt;- Canva AI 2.0 研究预览发布：推出 agentic 设计平台，支持自然语言生成可编辑设计、跨应用工作流自动化及连接 Slack、Zoom 等外部工具。&lt;br/&gt;- 苹果环保进展与折扣：三类组件实现 100% 回收材料，包装全面去塑料化；至 5 月 16 日回收合格产品可获 AirPods 等配件 10% 折扣。&lt;br/&gt;- Vision Pro 拍摄事故争议：一名在拍摄《Adventure》系列期间遇难的飞行员被曝在出事前，剧组曾向苹果报告过培训不足和工时过长等安全隐患。&lt;br/&gt;- iOS 27 泄露新特性：预计将支持扫描营养标签、通过扫描名片添加联系人、Safari 标签组自动命名以及将实体会员卡转换为数字钱包卡片。&lt;br/&gt;- iPhone 18 Pro 将搭载可变光圈：供应商 Sunny Optical 已开始生产相关组件，旨在让用户能物理控制景深（虚化效果）。&lt;br/&gt;- Opera 浏览器扩展 AI 连接功能：Opera One 和 GX 现在支持 MCP 标准，允许 ChatGPT 和 Claude 等 AI 直接访问浏览器标签页和页面内容。&lt;br/&gt;- Adobe Firefly AI 助手公测在即：可跨 Photoshop、Premiere 等 Creative Cloud 应用执行多步骤工作流，并计划集成至 Claude。&lt;br/&gt;- Netgear 获美国 FCC 豁免：在 FCC 禁用绝大多数外国制造路由器后，Netgear 成为首家获条件批准的公司，但具体获批原因尚不明确。&lt;br/&gt;- OLED 版 iPad Air 明年春季推出：预计 2026 年 3 月或 5 月发布，将采用三星 OLED 屏幕，但规格可能低于 Pro 系列（可能不含 ProMotion）。&lt;br/&gt;- Xfinity 数据泄露赔偿：针对 2023 年 3600 万用户数据泄露事件，Comcast 已达成 1.175 亿美元和解，受影响用户可申请赔偿。&lt;br/&gt;- 全球智能手机市场下滑：IDC 报告显示一季度出货量下降 4.1%，内存短缺导致成本上升，而苹果通过维持价格策略在竞争中获益。&lt;br/&gt;- YouTube Music 界面更新：Android 和 iOS 端推广分屏“正在播放”界面，将封面、控件与下一首队列集中显示。&lt;br/&gt;- Vibe Coding 应用 Anything 与苹果冲突：该 AI 编程应用因违反“禁止运行改变功能代码”的审核指南被两次下架，开发者指责苹果规则过时。&lt;br/&gt;- Apple TV 新剧首播：由 Elle Fanning 主演的喜剧剧集《Margo’s Got Money Troubles》现已上线前三集。&lt;br/&gt;- 苹果威胁下架 Grok：因 Grok 生成色情深度伪造图像，苹果私下要求其改进内容审核，否则将其从 App Store 移除。&lt;br/&gt;- App Store 审核漏洞：苹果近日下架了两个恶意应用——一个伪装成 Ledger Live 盗取加密货币的诈骗应用，以及一个通过诱导用户换取敏感数据的 Freecash 应用。</description>
+      <guid isPermaLink="false">ai-summary-20260418104759</guid>
+      <pubDate>Sat, 18 Apr 2026 10:47:59 GMT</pubDate>
+    </item>
     <item>
       <title>AI 简报 - 2026-04-18 08:39 (UTC)</title>
       <link>https://github.com/liusonwood/rss_ai_summarise#20260418083949</link>

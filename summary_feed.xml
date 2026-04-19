@@ -5,7 +5,14 @@
     <link>https://github.com/liusonwood/rss_ai_summarise</link>
     <description>由 AI 自动生成的文章全文摘要</description>
     <atom:link rel="self" type="application/rss+xml" href="https://liusonwood.github.io/rss_ai_summarise/summary_feed.xml"/>
-    <lastBuildDate>Sun, 19 Apr 2026 07:27:39 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 19 Apr 2026 23:39:32 GMT</lastBuildDate>
+    <item>
+      <title>AI 简报 - 2026-04-19 23:39 (UTC)</title>
+      <link>https://github.com/liusonwood/rss_ai_summarise#20260419233932</link>
+      <description>苹果商业模式探索&lt;br/&gt;核心信息：由于本地AI模型对大内存的需求导致Mac Studio和Mac mini供不应求，苹果可能重启服务器业务。建议通过云端出租运行macOS的苹果芯片计算资源，将一次性硬件销售转变为月费订阅模式。&lt;br/&gt;&lt;br/&gt;iOS 27功能预测&lt;br/&gt;核心信息：主打稳定性与性能优化。新增主屏幕自定义撤销和重做功能；引入Liquid Glass滑动条以精确调节视觉效果。&lt;br/&gt;&lt;br/&gt;Siri全新设计&lt;br/&gt;核心信息：iOS 27将对Siri进行重大重构。界面将集成在灵动岛中并伴随发光效果，支持像AI聊天机器人一样进行多轮对话及屏幕感知，底层将基于谷歌Gemini技术，并推出独立App记录对话历史。&lt;br/&gt;&lt;br/&gt;MacBook Pro更新进展&lt;br/&gt;核心信息：搭载M6芯片、OLED屏幕及触摸屏的新款MacBook Pro因行业内存和存储短缺导致发布延迟，预计推迟至2026年底或2027年初。&lt;br/&gt;&lt;br/&gt;Mac Studio发布计划&lt;br/&gt;核心信息：受供应链限制，搭载M5芯片的新款Mac Studio发布时间预计推迟至10月，此前原计划为年中发布。目前桌面端Mac产品普遍面临缺货和发货延迟。</description>
+      <guid isPermaLink="false">ai-summary-20260419233932</guid>
+      <pubDate>Sun, 19 Apr 2026 23:39:32 GMT</pubDate>
+    </item>
     <item>
       <title>AI 简报 - 2026-04-19 07:27 (UTC)</title>
       <link>https://github.com/liusonwood/rss_ai_summarise#20260419072739</link>

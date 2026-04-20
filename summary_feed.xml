@@ -5,7 +5,14 @@
     <link>https://github.com/liusonwood/rss_ai_summarise</link>
     <description>由 AI 自动生成的文章全文摘要</description>
     <atom:link rel="self" type="application/rss+xml" href="https://liusonwood.github.io/rss_ai_summarise/summary_feed.xml"/>
-    <lastBuildDate>Sun, 19 Apr 2026 23:39:32 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 20 Apr 2026 23:45:11 GMT</lastBuildDate>
+    <item>
+      <title>AI 简报 - 2026-04-20 23:45 (UTC)</title>
+      <link>https://github.com/liusonwood/rss_ai_summarise#20260420234511</link>
+      <description>Apple公司动态&lt;br/&gt;核心信息：Tim Cook将于2026年9月1日卸任CEO并出任执行主席，由硬件主管John Ternus接任CEO。Cook将继续负责全球政府关系与政策参与。Johny Srouji被提升为首席硬件官，统筹硬件工程与技术。&lt;br/&gt;&lt;br/&gt;软件更新与功能&lt;br/&gt;核心信息：iOS 26.5、iPadOS 26.5等系统的Beta 3版本发布。iOS 26 Wallet应用通过AI实现邮件订单自动追踪。Apple Sports支持CarPlay小组件。iPadOS 26.5优化了Magic配件的蓝牙配对流程。iOS 27传闻将停止支持iPhone 11系列及第二代SE。&lt;br/&gt;&lt;br/&gt;硬件与产品传闻&lt;br/&gt;核心信息：iPhone 18基础版可能延迟至2027年初发布，并采取成本削减措施。传闻Apple将推出名为iPhone Ultra的折叠屏手机。iPhone 17 Pro Max在NASA月球任务中拍摄到地球落下视频。&lt;br/&gt;&lt;br/&gt;服务与应用&lt;br/&gt;核心信息：WhatsApp计划推出每月约2.99美元的Plus付费订阅服务。Apple Music近期出现两次服务中断。巴西政府通报Apple与Google，指其应用商店缺乏针对未成年人的博彩应用管控。&lt;br/&gt;&lt;br/&gt;人工智能与第三方&lt;br/&gt;核心信息：OpenAI为Mac端Codex发布Chronicle功能，通过屏幕内容增强上下文理解。Aqara U400智能锁通过UWB技术实现了极高精度的感应解锁。&lt;br/&gt;&lt;br/&gt;其他资讯&lt;br/&gt;核心信息：法院裁定白宫不得强迫Apple屏蔽ICE追踪应用。Vision Pro被用于星战电影拍摄以协助IMAX构图。部分M5系列MacBook Pro在亚马逊平台出现折扣。</description>
+      <guid isPermaLink="false">ai-summary-20260420234511</guid>
+      <pubDate>Mon, 20 Apr 2026 23:45:11 GMT</pubDate>
+    </item>
     <item>
       <title>AI 简报 - 2026-04-19 23:39 (UTC)</title>
       <link>https://github.com/liusonwood/rss_ai_summarise#20260419233932</link>

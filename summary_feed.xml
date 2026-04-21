@@ -5,7 +5,14 @@
     <link>https://github.com/liusonwood/rss_ai_summarise</link>
     <description>由 AI 自动生成的文章全文摘要</description>
     <atom:link rel="self" type="application/rss+xml" href="https://liusonwood.github.io/rss_ai_summarise/summary_feed.xml"/>
-    <lastBuildDate>Mon, 20 Apr 2026 23:45:11 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 21 Apr 2026 23:37:17 GMT</lastBuildDate>
+    <item>
+      <title>AI 简报 - 2026-04-21 23:37 (UTC)</title>
+      <link>https://github.com/liusonwood/rss_ai_summarise#20260421233717</link>
+      <description>苹果公司领导层变动&lt;br/&gt;核心信息：Tim Cook将于2026年9月1日卸任CEO并担任董事会执行主席，由硬件工程高级副总裁John Ternus接任。&lt;br/&gt;关键细节：此次过渡计划经过精心保密和市场测试，Cook强调选择此时交接是基于产品路线图、财务状况和接任者准备程度的综合考虑。&lt;br/&gt;新任CEO动向：John Ternus已开始利用AI平台优化内部硬件工程运营，并预告未来将通过AI创造全新机会。&lt;br/&gt;行业反应：谷歌CEO Sundar Pichai、OpenAI CEO Sam Altman、巴菲特及特朗普均对Cook的领导成就表示高度赞赏。&lt;br/&gt;&lt;br/&gt;苹果产品与服务更新&lt;br/&gt;CarPlay更新：新增Apple Sports小组件，支持Perplexity AI语音聊天机器人，WhatsApp界面全面原生化。&lt;br/&gt;硬件传闻：iPhone 18系列预计推出首款折叠屏iPhone Ultra；2028年 iPhone或搭载2亿像素长焦镜头；新一代AirPods Pro将加入红外摄像头以增强AI视觉能力。&lt;br/&gt;系统 Beta：iOS 26.5、macOS 26.5等发布公开测试版3，重点在修复Bug及地图建议地点功能；iOS 27将实施更严格的网络安全TLS配置要求。&lt;br/&gt;内容服务：Apple TV剧集Silo第三季定于7月3日首播。&lt;br/&gt;配件发布：Beats推出与JENNIE合作的黑色Solo 4耳机及3米长USB C线缆。&lt;br/&gt;&lt;br/&gt;OpenAI 动态&lt;br/&gt;图像生成：发布ChatGPT Images 2模型，显著提升文字生成能力，支持2K分辨率及多比例，可用于杂志设计。&lt;br/&gt;企业级服务：推出Codex Labs计划，旨在帮助企业将AI代理集成到实际工作流中。&lt;br/&gt;&lt;br/&gt;其他科技新闻&lt;br/&gt;隐私违规：约300万张OkCupid用户照片在违反隐私政策的情况下被用于AI训练，现已被联邦贸易委员会强制删除。&lt;br/&gt;应用监管：Cal AI因绕过内购流程、计费设计欺骗等违规行为被苹果暂时从App Store下架。</description>
+      <guid isPermaLink="false">ai-summary-20260421233717</guid>
+      <pubDate>Tue, 21 Apr 2026 23:37:17 GMT</pubDate>
+    </item>
     <item>
       <title>AI 简报 - 2026-04-20 23:45 (UTC)</title>
       <link>https://github.com/liusonwood/rss_ai_summarise#20260420234511</link>

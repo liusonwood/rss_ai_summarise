@@ -96,12 +96,23 @@ def get_ai_summary(items):
     if not OPENROUTER_API_KEY:
         raise ValueError("OPENROUTER_API_KEY is not set!")
         
-        
-    prompt = "请为以下 RSS 文章提供中文简报，重点突出核心信息；以纯文本形式（汉子、英文字符、标点；不要有各类非标准符号、项目符号、表情符号、markdown标签）回复；正文前不要带说明性问候；使用列表形式，按主题分类并突出核心信息：\n\n"
-    
+    prompt = (
+        "你是一位专业的科技新闻编辑。请根据提供的 RSS 文章内容，整理出一份精炼、客观的中文每日简报。\n\n"
+        "### 要求：\n"
+        "1. **分类汇总**：按主题（如 Apple、AI、行业观察、周边资讯等）对内容进行分类。如果主题跨度不大，则按重要程度排序。\n"
+        "2. **内容质量**：每条摘要应直击核心事实，剔除营销废话，保持中立专业的语气。\n"
+        "3. **格式规范**：\n"
+        "   - 使用 Markdown 格式：分类标题加粗，如 **[分类名称]**。\n"
+        "   - 条目使用 `- ` 开头的无序列表。\n"
+        "   - 核心关键词或结论使用 **双星号加粗**。\n"
+        "   - **严禁** 开场白、问候语或结束语（直接输出正文内容）。\n"
+        "   - **禁止** 使用 Emoji 表情或任何非标准特殊符号。\n"
+        "4. **语言要求**：简洁地道的中文。\n\n"
+        "### 待处理文章列表：\n\n"
+    )
     
     for idx, item in enumerate(items, 1):
-        prompt += f"{idx}. {item['title']}\n{item['body'][:4000]}...\n\n"
+        prompt += f"文章 {idx}: {item['title']}\n内容摘要: {item['body'][:4000]}\n---\n"
         
     data = {
         "model": AI_MODEL,
@@ -137,9 +148,14 @@ def generate_rss_xml(summary_text):
     rfc822_date = now_utc.strftime("%a, %d %b %Y %H:%M:%S GMT")
     
     # 将 AI 生成的 Markdown 转为基础 HTML，确保阅读器兼容
-    html_content = summary_text.replace('\n', '<br/>')
-    html_content = re.sub(r'\*\*(.*?)\*\*', r'<strong>\1</strong>', html_content)
+    # 1. 处理标题 (将 # 替换为加粗，避免 RSS 中出现 #)
+    html_content = re.sub(r'^#+\s*(.*)', r'<strong>\1</strong>', summary_text, flags=re.MULTILINE)
+    # 2. 处理列表符号
     html_content = re.sub(r'^- (.*)', r'• \1', html_content, flags=re.MULTILINE)
+    # 3. 换行符转为 <br/>
+    html_content = html_content.replace('\n', '<br/>')
+    # 4. 处理 Markdown 加粗
+    html_content = re.sub(r'\*\*(.*?)\*\*', r'<strong>\1</strong>', html_content)
     
     # 唯一标识符和时间戳
     timestamp = now_utc.strftime('%Y%m%d%H%M%S')

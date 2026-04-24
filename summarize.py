@@ -112,7 +112,7 @@ def get_ai_summary(items):
     )
     
     for idx, item in enumerate(items, 1):
-        prompt += f"文章 {idx}: {item['title']}\n内容摘要: {item['body'][:4000]}\n---\n"
+        prompt += f"文章 {idx}: {item['title']}\n内容: {item['body'][:4000]}\n---\n"
         
     data = {
         "model": AI_MODEL,

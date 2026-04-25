@@ -5,7 +5,14 @@
     <link>https://github.com/liusonwood/rss_ai_summarise</link>
     <description>由 AI 自动生成的文章全文摘要</description>
     <atom:link rel="self" type="application/rss+xml" href="https://liusonwood.github.io/rss_ai_summarise/summary_feed.xml"/>
-    <lastBuildDate>Fri, 24 Apr 2026 23:41:51 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 25 Apr 2026 23:40:24 GMT</lastBuildDate>
+    <item>
+      <title>AI 简报 - 2026-04-25 23:40 (UTC)</title>
+      <link>https://github.com/liusonwood/rss_ai_summarise#20260425234024</link>
+      <description>&lt;strong&gt;[苹果硬件与产品策略]&lt;/strong&gt;&lt;br/&gt;• &lt;strong&gt;Apple Vision Pro 现状分析&lt;/strong&gt;：该产品被指由于缺乏坚定领导力导致功能碎片化，在佩戴舒适度、第三方应用生态及输入法方面存在明显短板。预计在 John Ternus 的领导下，产品可能在 &lt;strong&gt;2028 年左右&lt;/strong&gt;迎来实质性转机。&lt;br/&gt;• &lt;strong&gt;iPad 命名方案预测&lt;/strong&gt;：基于 Apple 在 MacBook Neo 和 iPhone 16e 上的命名逻辑，下一代搭载 A18 芯片的入门级 iPad 可能会弃用数字代号，改为 &lt;strong&gt;iPad Neo&lt;/strong&gt; 等具有明确身份标识的名称。&lt;br/&gt;&lt;br/&gt;&lt;strong&gt;[企业 IT 与安全]&lt;/strong&gt;&lt;br/&gt;• &lt;strong&gt;Safari 浏览器安全盲区&lt;/strong&gt;：Omdia 报告显示，仅 46% 的企业正式支持 Safari，而 27% 的企业处于非正式支持状态。由于浏览器已成为主要攻击端（如钓鱼和恶意扩展），未受管制的 Safari 成为企业 &lt;strong&gt;Shadow IT（影子 IT）&lt;/strong&gt; 的重大安全漏洞。&lt;br/&gt;&lt;br/&gt;&lt;strong&gt;[应用软件]&lt;/strong&gt;&lt;br/&gt;• &lt;strong&gt;InnerPulse 应用发布&lt;/strong&gt;：一款主打隐私和设备端处理的心理健康追踪应用在 App Store 上线。该应用支持 &lt;strong&gt;0-10 分心情量表&lt;/strong&gt;、85 个影响因子及 PHQ-9/GAD-7 等专业心理筛查量表，采用一次性买断制（4.99 美元）。</description>
+      <guid isPermaLink="false">ai-summary-20260425234024</guid>
+      <pubDate>Sat, 25 Apr 2026 23:40:24 GMT</pubDate>
+    </item>
     <item>
       <title>AI 简报 - 2026-04-24 23:41 (UTC)</title>
       <link>https://github.com/liusonwood/rss_ai_summarise#20260424234151</link>

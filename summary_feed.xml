@@ -5,7 +5,14 @@
     <link>https://github.com/liusonwood/rss_ai_summarise</link>
     <description>由 AI 自动生成的文章全文摘要</description>
     <atom:link rel="self" type="application/rss+xml" href="https://liusonwood.github.io/rss_ai_summarise/summary_feed.xml"/>
-    <lastBuildDate>Sat, 25 Apr 2026 23:40:24 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 26 Apr 2026 23:41:32 GMT</lastBuildDate>
+    <item>
+      <title>AI 简报 - 2026-04-26 23:41 (UTC)</title>
+      <link>https://github.com/liusonwood/rss_ai_summarise#20260426234132</link>
+      <description>&lt;strong&gt;[苹果公司动态]&lt;/strong&gt;&lt;br/&gt;• &lt;strong&gt;CEO 权力交接&lt;/strong&gt;：John Ternus 将于 &lt;strong&gt;2026 年 9 月 1 日&lt;/strong&gt; 正式接任苹果 CEO。此次交接时间点关键，他将直接领导年度秋季发布会，并预计将推出其主导开发的&lt;strong&gt;首款折叠屏 iPhone&lt;/strong&gt;。&lt;br/&gt;• &lt;strong&gt;人才结构优化建议&lt;/strong&gt;：有分析建议苹果参考微软的&lt;strong&gt;自愿离职买断计划&lt;/strong&gt;（针对年龄与工龄总和达标的员工），以解决资深员工“休息并兑现期权”（rest and vest）导致的效率低下问题，通过引入新鲜血液提升软件质量。&lt;br/&gt;&lt;br/&gt;&lt;strong&gt;[硬件产品问题]&lt;/strong&gt;&lt;br/&gt;• &lt;strong&gt;iPhone 电量耗尽唤醒故障&lt;/strong&gt;：部分 iPhone 17、iPhone 17 Pro 及 iPhone Air 用户反馈，设备在&lt;strong&gt;电量完全耗尽&lt;/strong&gt;后，使用有线充电难以正常重启（屏幕保持黑屏）。目前的有效临时解决方案是使用 &lt;strong&gt;MagSafe 无线充电&lt;/strong&gt; 维持 10 至 15 分钟。&lt;br/&gt;&lt;br/&gt;&lt;strong&gt;[周边配件]&lt;/strong&gt;&lt;br/&gt;• &lt;strong&gt;Anker 推出三合一充电支架&lt;/strong&gt;：Anker Prime 3-in-1 MagSafe 充电站支持 &lt;strong&gt;Qi2.2 标准&lt;/strong&gt;，可为 iPhone 16/17 提供 &lt;strong&gt;25W 快充&lt;/strong&gt;。该设备配备内置散热风扇、功率显示屏及 65W 电源适配器。</description>
+      <guid isPermaLink="false">ai-summary-20260426234132</guid>
+      <pubDate>Sun, 26 Apr 2026 23:41:32 GMT</pubDate>
+    </item>
     <item>
       <title>AI 简报 - 2026-04-25 23:40 (UTC)</title>
       <link>https://github.com/liusonwood/rss_ai_summarise#20260425234024</link>

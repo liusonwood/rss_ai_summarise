@@ -5,7 +5,14 @@
     <link>https://github.com/liusonwood/rss_ai_summarise</link>
     <description>由 AI 自动生成的文章全文摘要</description>
     <atom:link rel="self" type="application/rss+xml" href="https://liusonwood.github.io/rss_ai_summarise/summary_feed.xml"/>
-    <lastBuildDate>Fri, 01 May 2026 23:54:21 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 02 May 2026 23:47:29 GMT</lastBuildDate>
+    <item>
+      <title>AI 简报 - 2026-05-02 23:47 (UTC)</title>
+      <link>https://github.com/liusonwood/rss_ai_summarise#20260502234729</link>
+      <description>&lt;strong&gt;[人工智能与软件]&lt;/strong&gt;&lt;br/&gt;• xAI 计划将 &lt;strong&gt;Grok 语音模式引入 Apple CarPlay&lt;/strong&gt;，旨在将 AI 聊天体验扩展至更多车型，使其与 ChatGPT 和 Perplexity 竞争。&lt;br/&gt;• 独立应用 &lt;strong&gt;This Day&lt;/strong&gt; 上线，通过每日提醒用户清理历史同日照片，并提供 &lt;strong&gt;Live Photo 压缩与重复项检测&lt;/strong&gt;功能，旨在缓解 iCloud 存储压力。&lt;br/&gt;&lt;br/&gt;&lt;strong&gt;[金融服务]&lt;/strong&gt;&lt;br/&gt;• Apple Card 推出限时促销：现有用户在 5 月 18 日前&lt;strong&gt;添加共同所有者&lt;/strong&gt;，且新成员在首 30 天内消费满 100 美元，即可获得 &lt;strong&gt;100 美元现金奖励 (Daily Cash)&lt;/strong&gt;。&lt;br/&gt;&lt;br/&gt;&lt;strong&gt;[企业安全]&lt;/strong&gt;&lt;br/&gt;• Jamf 年度趋势报告揭示企业 Apple 设备的三大安全风险：&lt;strong&gt;53% 的组织&lt;/strong&gt;存在操作系统版本严重滞后问题；约 &lt;strong&gt;1.2% 的设备被越狱&lt;/strong&gt;或使用第三方应用市场；&lt;strong&gt;18% 的用户&lt;/strong&gt;习惯连接高风险公共热点。</description>
+      <guid isPermaLink="false">ai-summary-20260502234729</guid>
+      <pubDate>Sat, 02 May 2026 23:47:29 GMT</pubDate>
+    </item>
     <item>
       <title>AI 简报 - 2026-05-01 23:54 (UTC)</title>
       <link>https://github.com/liusonwood/rss_ai_summarise#20260501235421</link>
